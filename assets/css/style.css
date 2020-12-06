@@ -1,15 +1,18 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
   --colorPrimary: #47986d;
   --colorSecondary: #3c805b;
 }
+
 .list {
   list-style: none;
   font-size: 0;
   text-align: center;
 }
+
 .listItem {
   position: relative;
   display: inline-block;
@@ -18,11 +21,13 @@
   border: 1px solid var(--colorSecondary);
   color: white;
 }
+
 .subListItem {
   position: relative;
   display: inline-block;
   width: 100%;
 }
+
 .subListDeep {
   position: absolute;
   display: none;
@@ -50,6 +55,7 @@
   left: 0;
   right: 0;
 }
+
 .link {
   display: inline-block;
   text-decoration: none;
@@ -57,18 +63,23 @@
   padding: 10px 30px;
   width: 100%;
 }
+
 .listItem:hover {
   background-color: var(--colorSecondary);
 }
+
 .subListItem:hover {
   background-color: var(--colorSecondary);
 }
+
 .listItemDeep:hover {
   background-color: var(--colorSecondary);
 }
+
 .listItem:hover > .subList {
   display: block;
 }
+
 .subListItem:hover > .subListDeep {
   display: block;
 }
